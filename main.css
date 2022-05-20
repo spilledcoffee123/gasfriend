@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+
+* {
+  font-family: "Share Tech", sans-serif;
+}
+
+.split-left {
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 40px;
+  margin-left: -8px;
+  text-align: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gas-pump-img {
+  width: 80px;
+  margin-top: 150px;
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+#header {
+  font-size: 50px;
+  font-style: oblique;
+}
+
+#sub-header {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.location-search-above-text {
+  font-size: 30px;
+  font-style: normal;
+  padding-top: 30px;
+}
+
+#autocomplete {
+  height: 30px;
+  width: 300px;
+  font-size: larger;
+  font-style: italic;
+  border: none;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.location-search-bar:hover {
+  background-color: rgb(212, 211, 211);
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-within-above-text {
+  font-size: 30px;
+  font-style: normal;
+}
+
+.search-within-bar {
+  height: 25px;
+  width: 200px;
+  font-size: larger;
+  font-style: italic;
+  border: none;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.search-within-bar:hover {
+  background-color: rgb(212, 211, 211);
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.split-right {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+#map {
+  height: 100vh;
+  width: 90vw;
+}
+
+@media only screen and (max-width: 760px) {
+  .gas-pump-img {
+    width: 60px;
+  }
+
+  #header {
+    font-size: 40px;
+    font-style: oblique;
+  }
+
+  #sub-header {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .location-search-above-text {
+    font-size: 20px;
+    font-style: normal;
+    padding-top: 20px;
+  }
+
+  #autocomplete {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-height: 670px) {
+  .gas-pump-img {
+    margin-top: 125px;
+    width: 50px;
+  }
+
+  #header {
+    font-size: 30px;
+    font-style: oblique;
+  }
+
+  #sub-header {
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .location-search-above-text {
+    font-size: 15px;
+    font-style: normal;
+    padding-top: 15px;
+  }
+
+  #autocomplete {
+    width: 125px;
+  }
+}

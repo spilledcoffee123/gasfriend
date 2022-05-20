@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>GasFriend</title>
+    <link rel="icon" type="image/png" href="images/ gas-pump.png" />
+
+    <link rel="icon" href="images/gas-pump.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="split-left">
+      <img src="images/gas-pump.png" alt="gas-pump-icon" class="gas-pump-img" />
+
+      <h3 id="header">Hello, I am GasFriend!</h3>
+      <p id="sub-header">Find gas stations near you!!!</p>
+
+      <p class="location-search-above-text">Enter your location!</p>
+      <input
+        id="autocomplete"
+        placeholder="Enter your address"
+        type="text"
+        onfocus="this.value=''"
+        onchange="this.blur()"
+      />
+    </div>
+
+    <div class="split-right">
+      <div id="map"></div>
+    </div>
+  </body>
+  <script type="module" src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVG2iVT3BtcKU-VQyIhswOvzLyRfptN1o&libraries=places"></script>
+</html>
